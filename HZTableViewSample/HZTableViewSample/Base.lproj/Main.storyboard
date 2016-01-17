@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hGJ-vj-INJ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Material Navigation Controller-->
+        <scene sceneID="UHZ-3p-R3e">
+            <objects>
+                <navigationController id="hGJ-vj-INJ" customClass="HZMaterialNavigationController" customModule="HZTableViewSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OGW-Dt-4pY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VDf-Gf-yON" kind="relationship" relationship="rootViewController" id="B3o-pl-VCX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQQ-KL-Aut" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-400" y="614"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aYP-iO-Ysn">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="VDf-Gf-yON" customClass="ViewController" customModule="HZTableViewSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wgM-T8-ImQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="v5n-wC-Uyw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bfi-eu-G6e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="T0H-99-qZr" customClass="HZMaterialTableView" customModule="HZTableViewSample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T0H-99-qZr" firstAttribute="leading" secondItem="bfi-eu-G6e" secondAttribute="leading" id="1l4-h5-v9t"/>
+                            <constraint firstItem="T0H-99-qZr" firstAttribute="top" secondItem="wgM-T8-ImQ" secondAttribute="bottom" constant="-20" id="SWQ-Ah-TgN"/>
+                            <constraint firstItem="v5n-wC-Uyw" firstAttribute="top" secondItem="T0H-99-qZr" secondAttribute="bottom" id="WLt-LX-WGy"/>
+                            <constraint firstAttribute="trailing" secondItem="T0H-99-qZr" secondAttribute="trailing" id="zFu-oY-b4b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mU5-vO-7Ip"/>
+                    <connections>
+                        <outlet property="tableView" destination="T0H-99-qZr" id="yjz-sD-gye"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KUk-yg-OKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="614"/>
+        </scene>
+    </scenes>
+</document>
