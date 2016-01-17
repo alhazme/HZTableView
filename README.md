@@ -1,5 +1,5 @@
 # HZTableView
-Implement Material Design in table view with custom parallax header view.![HZTableView](/source/image.png)
+Implement Material Design in UITableView with parallax header view.![HZTableView](/source/image.png)
 
 ## Installation
 * Drag and drop all source in HZMaterialTableView folder to your project.![Project Folders](/source/projectfolders.png)
